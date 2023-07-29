@@ -24,3 +24,8 @@ Convert Weblate translation memory to translations
 For some reason, a Weblate project I translated suddenly lost my translations for one file. After a short panic, I found out that my profile has automatically stored the translation memory based on my previous work. 
 
 Tried downloading and uploading it directly, both JSON and TMX formats failed to upload. Then I downloaded the JSON file, compared the structure to the original localization file and wrote a script to automatically generate translations from it.
+
+## Notes
+
+- Translation memory doesn't seem to contain plurals, these you'll have to redo manually
+- Strings that are identical on original and target language will not be included
